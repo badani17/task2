@@ -17,6 +17,25 @@
         #tiramisu .img{
             padding-left: 3.5%;
         }
+
+        form{
+            width: auto;
+            height: auto;
+            
+        }
+
+        form input{
+            margin-top: 10px;
+        }
+
+        #butoni{
+            margin-right: 55px;
+            margin-top: 1%;
+        }
+
+        #number{
+            width: 160px;
+        }
        
     </style>
 </head>
@@ -39,9 +58,53 @@
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti exercitationem odio repellat ipsam.
      Magni iste delectus, quidem blanditiis at, nisi beatae, similique facere nesciunt earum fugiat odit dicta rem id!</p>
 
+    <form>
+        <fieldset>
+            <legend><h1>Order Tiramisu</h1></legend>
+        <input type="text" name="emri" id="emri" placeholder="Emri juaj" required minlength="3" maxlength="20"><br>
+        <input type="text" name="mbiemri" id="mbiemri" placeholder="Mbiemri juaj" required minlength="3" maxlength="20"><br>
+        <input type="number" name="number" id="number" placeholder="Sasia" max="20" required min="0"><br>
+        
+        <input type="datetime-local" name="date" id="date" required><br><br>
+        
+
+            <select name="select" id="select">
+                <option value="">--Choose a drink--</option>
+
+                <optgroup label="CocaCola">CocaCola
+                    <option value="coca">CocaCola 250ml</option>
+                    <option value="coca2">CocaCola 500ml</option>
+                    <option value="coca3">CocaCola 1L</option>
+                </optgroup>
+
+                <optgroup label="Fanta">Fanta
+                    <option value="fanta">Fanta 250ml</option>
+                    <option value="fanta2">Fanta 500ml</option>
+                    <option value="fanta3">Fanta 1L</option>
+                </optgroup>
+
+                <optgroup label="Sprite">Fanta
+                    <option value="sprite">Sprite 250ml</option>
+                    <option value="sprite2">Sprite 500ml</option>
+                    <option value="sprite3">Sprite 1L</option>
+                </optgroup>
+
+                <optgroup label="Water">Fanta
+                    <option value="water">Water 250ml</option>
+                    <option value="water2">Water 500ml</option>
+                    <option value="water3">Water 1L</option>
+                </optgroup>
+            </select><br>
+
+
+        <input type="submit" name="butoni" id="butoni" value="Porosit">
+        <input type="reset" name="reset" id="reset" value="Reset">
+    </fieldset>
+    </form>
+
     <dl>
         <dt><strong>Ingredients</strong></dt>
-        <dd>Lorem ipsum</dd>
+        <dd>Lorem ipsum</dd>        
         <dd>Lorem ipsum</dd>
         <dd>Lorem ipsum</dd>
         <dd>Lorem ipsum</dd>
